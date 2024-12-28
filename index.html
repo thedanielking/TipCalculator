@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- my google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <main class="flex-col">
+  <h1 class="flex-col">
+    <span>SPLI</span>
+    <span>TTER</span>
+  </h1>
+
+  <article class="container flex-row">
+    
+    <section class="card-1 flex-col">
+
+      <div class="flex-col">
+        <p>Bill</p>
+        <div class="inputDiv flex-row">
+          <img src="./images/icon-dollar.svg" alt="dollarsign">
+          <input type="text" value="0" id="bill">
+        </div>
+      </div>
+
+      <div class="tipsDiv flex-col">
+        <p>Select Tip %</p>
+        <div>
+          <li class="tip">5%</li>
+          <li class="tip">10%</li>
+          <li class="tip">15%</li>
+          <li class="tip">25%</li>
+          <li class="tip">50%</li>
+          <li class="tip"><input type="text" value="Custom" id="custom"></li>
+        </div>
+      </div>
+
+      <div id="errorMessage">
+        <div class="flex-row">
+          <p>Number of People</p>
+          <p id="error">Can't be zero</p>
+        </div>
+        <div class="inputDiv">
+          <img src="./images/icon-person.svg" alt="person">
+          <input type="text" value="0" id="numberOfPeople">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="card-2 flex-col">
+      
+      <div class="flex-col">
+        
+        <div class="resultDiv flex-row">
+          <div>
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <p class="amount" id="tipPerPerson">$0.00</p>
+        </div>
+
+        <div class="resultDiv flex-row">
+          <div>
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <p class="amount" id="totalpPerPerson">$0.00</p>
+        </div>
+
+      </div>
+
+      <button id="resetBtn">RESET</button>
+
+    </section>
+
+  </article>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel King</a>. -->
+  </div>
+</main>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
