@@ -220,6 +220,10 @@ h1{
     .tipsDiv div{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    h1{
+        font-size: 1rem;
+    }
 }
 
 
